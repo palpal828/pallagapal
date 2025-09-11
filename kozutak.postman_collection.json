@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "5bd9016c-8204-4d54-97b5-cfaaf3257bc6",
+		"name": "kozutak",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41645673",
+		"_collection_link": "https://novesz-8829019.postman.co/workspace/Eszter's-Team's-Workspace~65dd523e-be52-4b0e-8974-44a9248ffde0/collection/48360053-5bd9016c-8204-4d54-97b5-cfaaf3257bc6?action=share&source=collection_link&creator=41645673"
+	},
+	"item": [
+		{
+			"name": "megyek",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "kozutak_hossza",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "regiok",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
