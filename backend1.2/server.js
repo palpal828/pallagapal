@@ -3,18 +3,13 @@ const app = express();
 const cors = require("cors");
 const mysql = require("mysql");
 const bodyParser = require('body-parser');
- 
+require('dotenv').config();
+const {db} = require("./db");
 app.use(bodyParser.json());
 app.use(cors());
  
 // Adatbázis kapcsolat létrehozása
-const db = mysql.createConnection({
- user: "root",
- host: "127.0.0.1",
- port: 3307,
- password: "",
- database: "kozutak",
-});
+
  
 // Gyökér útvonal, tesztelésre
 app.get("/", (req, res) => {
