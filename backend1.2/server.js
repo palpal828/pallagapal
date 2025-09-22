@@ -4,13 +4,21 @@ const cors = require("cors");
 const mysql = require("mysql");
 const bodyParser = require('body-parser');
 require('dotenv').config();
-const {db} = require("./db");
+
 app.use(bodyParser.json());
 app.use(cors());
  
 // Adatbázis kapcsolat létrehozása
 
- 
+const mysql = require("mysql2");
+require('dotenv').config();
+const db = mysql.createConnection({
+ user: process.env.DB_USER,
+ host: process.env.DB_HOST,
+ port: Number(process.env.DB_PORT) || 3307,
+ password: process.env.DB_PASSWORD,
+ database: process.env.DB_DATABASE,
+});
 // Gyökér útvonal, tesztelésre
 app.get("/", (req, res) => {
  res.send("Fut a backend!");
