@@ -18,13 +18,18 @@ const db = mysql.createConnection({
       return res.status(400).json({ error: "Név és email kötelező" });
     }
   
-    const sql = "INSERT INTO users (nev, email) VALUES (?, ?)";
+    const sql = "INSERT INTO users (UName, Email) VALUES (?, ?)";
     db.query(sql, [nev, email], (err, result) => {
       if (err) {
         console.error(err);
         return res.status(500).json({ error: "Hiba történt az adatbázis mentésnél" });
       }
-      res.json({ success: true, id: result.insertId });
+      res.json({
+        success: true,
+        userID: result.insertId,
+        nev,
+        email,
+      });
     });
   });
   app.listen(3001, () => {
