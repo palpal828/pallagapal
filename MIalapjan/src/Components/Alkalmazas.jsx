@@ -4,6 +4,7 @@ import Menu from "./Menu";
 import FoOldal from "./FoOldal";
 import Leiras from "./Leiras";
 import Regisztracio from "./Regisztacio";
+import Tablalap from "./Tablalap";
 
 function Alkalmazas() {
     return (
@@ -16,6 +17,7 @@ function Alkalmazas() {
             <Route path="/regisztracio" element={<Regisztracio />} />
           </Routes>
         </main>
+        <Tablalap />
       </div>
     );
   }
