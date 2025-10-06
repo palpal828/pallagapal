@@ -1,0 +1,42 @@
+/* Navbar background and padding */
+.custom-navbar {
+    background: linear-gradient(90deg, #1a1a1a, #333333);
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Brand styling */
+.custom-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f8f9fa;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.custom-brand:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* Nav links styling */
+.custom-nav-link {
+    font-size: 1.1rem;
+    color: #f8f9fa;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.custom-nav-link:hover {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+/* Navbar toggle button */
+.navbar-toggler {
+    border-color: #ffc107;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23ffc107' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 193, 7, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
